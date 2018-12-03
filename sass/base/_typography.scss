@@ -1,0 +1,78 @@
+/* ----------------------------
+Typography
+---------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Montserrat:200,400,600');
+@import url("https://use.typekit.net/yxp0bje.css"); // adobe-garamond-pro
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  color: $color-white;
+}
+
+a, a:active, a:focus {
+  text-decoration: none;
+  color: $color-primary-dark;
+}
+
+.heading-primary {
+  color: $color-primary-dark;
+  margin-bottom: 6rem;
+
+
+  backface-visibility: hidden;
+  /* Tips: Preventing animation moves, like a little bit shaky
+  *   backface-visibility: hidden;
+  */
+
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-family: "Great Vibes", sans-serif;
+    letter-spacing: 1.3rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    /*
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+    */
+
+  }
+
+  &--sub {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 0.5rem;
+    animation: moveInRight 1s ease-in;
+  }
+}
+
+.heading-secondary{
+  font-size: 3.5rem;
+  font-weight: 400;
+  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .1rem;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 600;
+  color: $color-primary-dark;
+}
+
+.pagragraph{
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: $color-grey-dark-3;
+  font-size: 1.8rem;
+
+  &:not(:last-child){
+    margin-bottom: 3rem;
+  }
+}

@@ -1,0 +1,63 @@
+/* ----------------------------
+Homepage
+---------------------------- */
+
+.container {
+  max-width: 100%;
+  min-height: 50rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-about, .section-do {
+  padding: 8rem 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----------------------------
+Section About
+---------------------------- */
+.section-about {
+  width: 70%;
+  align-self: center;
+
+  & > .header__logo {
+    height: 16rem;
+    margin-bottom: 2rem;
+  }
+
+  & > .pagragraph {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+/* ----------------------------
+Section What I can do
+---------------------------- */
+
+.section-do {
+
+  .do--box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 4rem;
+    width: 70%;
+  }
+
+  .do--text {
+    width: 60%;
+  }
+
+  .do--image {
+      height: 12rem;
+  }
+}

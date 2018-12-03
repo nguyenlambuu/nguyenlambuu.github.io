@@ -1,0 +1,20 @@
+/*-------
+- USER NAVIGATION
+---------*/
+.user-nav {
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  &__item {
+    margin: 0 1rem;
+    color: $color-white !important;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
