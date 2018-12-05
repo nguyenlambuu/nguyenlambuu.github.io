@@ -111,6 +111,18 @@ a, a:active, a:focus {
   .pagragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
+.link:link, .link:visited {
+  color: #9DC2C2;
+  background-color: transparent;
+  text-decoration: none;
+  display: inline-block;
+  transition: all .2s; }
+
+.link:hover, .link:active {
+  color: #16272D;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  transform: rotate(5deg) scale(1.3); }
+
 /* ----------------------------
 Button
 ---------------------------- */
@@ -164,8 +176,7 @@ Button
   list-style: none; }
 
 .user-nav__item {
-  margin: 0 1rem;
-  color: #fff !important; }
+  margin: 0 1rem; }
   .user-nav__item:last-child {
     margin-right: 0; }
 
@@ -175,7 +186,7 @@ Header
 .header {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(180deg, rgba(191, 215, 211, 0.8), rgba(157, 194, 194, 0.8)), url("/img/mountain.jpg");
+  background-image: linear-gradient(180deg, rgba(191, 215, 211, 0.2), rgba(22, 39, 45, 0.4)), url("/img/mountain.jpg");
   background-size: cover; }
   .header__top {
     display: flex;
@@ -228,8 +239,9 @@ Header
   justify-content: center;
   align-items: center;
   padding: 4rem 0;
-  background-color: #BFD7D3;
+  background-color: rgba(191, 215, 211, 0.2);
   font-size: 1.6rem;
+  color: #39575E;
   font-weight: 600; }
   .footer > ul {
     display: flex;
@@ -301,6 +313,9 @@ Section What I can do
   height: 16rem;
   margin-bottom: 2rem; }
 
+.section-project--0 {
+  background-color: #ffbb00; }
+
 .section-project--1 {
   background-color: #337ab7; }
 
@@ -323,7 +338,8 @@ Section What I can do
   flex-direction: column;
   width: 60%; }
   .section-project .image-box__main {
-    width: 100%; }
+    width: auto;
+    height: 50rem; }
   .section-project .image-box__thumbs {
     display: flex;
     justify-content: space-around;

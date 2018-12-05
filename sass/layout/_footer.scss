@@ -5,8 +5,9 @@
   align-items: center;
 
   padding: 4rem 0;
-  background-color: $color-primary-light;
+  background-color: rgba($color-primary-light, .2);
   font-size: $default-font-size;
+  color: $color-primary-dark;
   font-weight: 600;
 
   & > ul {

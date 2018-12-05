@@ -5,8 +5,8 @@ Header
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(180deg,
-          rgba($color-primary-light, 0.8),
-          rgba($color-primary, 0.8)),url("/img/mountain.jpg");
+          rgba($color-primary-light, 0.2),
+          rgba($color-primary-darker, 0.4)),url("/img/mountain.jpg");
   background-size: cover;
   &__top {
     display: flex;

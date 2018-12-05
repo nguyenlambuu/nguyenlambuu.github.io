@@ -17,6 +17,9 @@
 
 .section-project {
 
+  &--0 {
+    background-color: #ffbb00;
+  }
   &--1 {
     background-color: #337ab7;
   }
@@ -41,7 +44,8 @@
     flex-direction: column;
     width: 60%;
     &__main {
-      width: 100%;
+      width: auto;
+      height: 50rem;
     }
 
     &__thumbs {
