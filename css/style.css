@@ -60,10 +60,10 @@ body {
 
 a, a:active, a:focus {
   text-decoration: none;
-  color: #399d87; }
+  color: #39575E; }
 
 .heading-primary {
-  color: #399d87;
+  color: #fff;
   margin-bottom: 6rem;
   backface-visibility: hidden;
   /* Tips: Preventing animation moves, like a little bit shaky
@@ -92,7 +92,7 @@ a, a:active, a:focus {
 .heading-secondary {
   font-size: 3.5rem;
   font-weight: 400;
-  background-image: linear-gradient(to right, #7ed56f, #399d87);
+  background-image: linear-gradient(to right, #9DC2C2, #39575E);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: .1rem; }
@@ -100,16 +100,38 @@ a, a:active, a:focus {
 .heading-tertiary {
   font-size: 2rem;
   font-weight: 600;
-  color: #399d87; }
+  color: #39575E; }
 
 .pagragraph {
   font-family: adobe-garamond-pro, serif;
   font-weight: 400;
   font-style: normal;
-  color: #333;
+  color: #16272D;
   font-size: 1.8rem; }
   .pagragraph:not(:last-child) {
     margin-bottom: 3rem; }
+
+/* ----------------------------
+Button
+---------------------------- */
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  padding: 3px;
+  transition: all .2s; }
+
+.btn-text:hover {
+  background-color: #fff;
+  color: #16272D;
+  box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.15);
+  transform: translateY(0); }
 
 .line {
   position: relative;
@@ -151,20 +173,23 @@ a, a:active, a:focus {
 Header
 ---------------------------- */
 .header {
-  background-color: #e0ebe8; }
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(180deg, rgba(191, 215, 211, 0.8), rgba(157, 194, 194, 0.8)), url("/img/mountain.jpg");
+  background-size: cover; }
   .header__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 8rem;
     padding: 0 8rem;
-    font-size: 1.6rem; }
-  .header__logo {
-    height: 3.25rem;
-    clip-path: circle(50% at 50% 50%);
-    -webkit-clip-path: circle(50% at 50% 50%); }
+    font-size: 1.6rem;
+    background-color: transparent; }
   .header__main {
     position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     height: calc(100vh - 8rem); }
     .header__main--work {
       position: relative;
@@ -175,42 +200,48 @@ Header
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 8rem; }
-      .header__main--work .flag {
-        position: absolute;
-        bottom: 0; }
-        .header__main--work .flag--left {
-          left: 20%; }
-        .header__main--work .flag--right {
-          left: 80%; }
     .header__main > .heading-primary {
       position: absolute;
       top: 30%;
       left: 50%;
       transform: translate(-50%, -30%); }
+  .header__logo {
+    height: 3.25rem;
+    clip-path: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%); }
+  .header__avatar {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    margin-bottom: 4rem;
+    clip-path: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%); }
   .header__background {
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    height: 40%;
+    width: 100%;
+    height: 100%;
     background-size: cover; }
 
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 4rem 0;
-  background-color: #e0ebe8;
+  background-color: #BFD7D3;
   font-size: 1.6rem;
   font-weight: 600; }
   .footer > ul {
     display: flex;
     justify-content: space-between;
-    list-style: none; }
+    list-style: none;
+    padding-top: 4rem; }
     .footer > ul > li {
-      padding-right: 3rem; }
+      padding-right: 4rem; }
       .footer > ul > li:last-child {
         padding-right: 0; }
+      .footer > ul > li > a > img {
+        height: 4rem; }
 
 /* ----------------------------
 Homepage
@@ -266,7 +297,7 @@ Section What I can do
   justify-content: center;
   align-items: center; }
 
-.section-work > .header__logo {
+.section-work > .icon__work {
   height: 16rem;
   margin-bottom: 2rem; }
 
@@ -306,7 +337,6 @@ Section What I can do
   .section-project .info-box > * {
     padding-bottom: 1rem; }
     .section-project .info-box > *:last-child {
-      padding-top: 3rem;
       padding-bottom: 0; }
   .section-project .info-box > .heading-secondary, .section-project .info-box > .heading-tertiary, .section-project .info-box > .pagragraph {
     color: #fff; }

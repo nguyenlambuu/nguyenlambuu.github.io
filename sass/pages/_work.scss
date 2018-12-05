@@ -9,7 +9,7 @@
 
 .section-work {
 
-  & > .header__logo {
+  & > .icon__work {
     height: 16rem;
     margin-bottom: 2rem;
   }
@@ -62,7 +62,6 @@
       padding-bottom: 1rem;
 
       &:last-child {
-        padding-top: 3rem;
         padding-bottom: 0;
       }
     }
